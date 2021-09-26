@@ -1,0 +1,27 @@
+body {
+  margin: 10px 1px 0px 1px;
+}
+
+.mainDiv {
+  background-color: green;
+}
+
+.boxDiv {
+  border: 3px dotted black;
+  margin-left: 1rem;
+  padding: 25px 10px 25px 10px;
+}
+
+.firstText {
+  color: red;
+}
+
+.secondText {
+  margin-top: 1rem;
+  color: rgb(5, 107, 5);
+}
+
+.lastText {
+  margin-top: 1rem;
+  color: purple;
+}

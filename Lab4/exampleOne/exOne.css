@@ -1,0 +1,21 @@
+body {
+  background-color: blue;
+}
+
+.mainEx {
+  margin: 8rem;
+  border: 4px solid black;
+}
+
+.firstDiv {
+  margin: 1rem;
+  border: 2px dashed green;
+  color: red;
+  padding: 0.5rem;
+}
+
+.secondDiv {
+  border: 2px dashed yellow;
+  height: 350px;
+  padding: 1rem;
+}

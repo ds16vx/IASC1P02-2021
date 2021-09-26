@@ -1,0 +1,38 @@
+.firstDiv {
+  margin: 1rem;
+  border: 3px dotted maroon;
+  justify-content: center;
+  display: flex;
+  padding-top: 20rem;
+  padding-bottom: 1rem;
+}
+
+.secondDiv {
+  font-size: x-small;
+  justify-content: center;
+  display: flex;
+  color: green;
+  margin-bottom: 2rem;
+}
+
+.thirdDiv {
+  color: orange;
+  font-size: xx-large;
+}
+
+.thirdDiv span {
+  color: red;
+  position: relative;
+  bottom: 15px;
+}
+
+.fourthDiv {
+  font-size: xx-small;
+  color: purple;
+  display: flex;
+  justify-content: end;
+}
+
+.fourthDiv span {
+  color: yellow;
+}
