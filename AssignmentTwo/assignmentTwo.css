@@ -1,0 +1,61 @@
+h1,
+h2,
+h3,
+p {
+  text-transform: lowercase;
+  color: purple;
+}
+button p {
+  color: chartreuse;
+  font-weight: bold;
+}
+
+.firstHeader {
+  color: orange;
+}
+
+.firstTag {
+  font-size: 2rem;
+}
+
+.secondTag {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.upperCaseText {
+  text-transform: uppercase;
+}
+
+.fixedBox {
+  width: 80px;
+  height: 80px;
+  background-color: purple;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+}
+.absoluteBox {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.relativeBox {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  position: relative;
+}
+
+.boxExample {
+  background-color: teal;
+  width: 300px;
+  height: 300px;
+  padding: 5rem;
+  margin: 3rem;
+  border: 4px dashed black;
+  content: normal;
+}
