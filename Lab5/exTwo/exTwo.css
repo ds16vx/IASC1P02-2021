@@ -1,0 +1,49 @@
+body {
+  background-color: white;
+  margin: 0;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  background-color: green;
+  color: black;
+  font-weight: bold;
+}
+
+#header {
+  text-align: center;
+  background-color: red;
+  padding: 0.5rem;
+}
+
+#navContainer {
+  display: flex;
+}
+
+#firstNav {
+  flex: 0.8;
+  height: 50px;
+  width: 0px;
+  background-color: pink;
+  text-align: left;
+  padding-top: 2rem;
+}
+
+#secondNav {
+  height: 50px;
+  background-color: orange;
+  flex: auto;
+  text-align: left;
+  padding-top: 2rem;
+}
+
+#content {
+  height: 600px;
+  background-color: blue;
+  text-align: left;
+}
+
+#bottom {
+  text-align: left;
+  height: 50px;
+  clear: both;
+  background-color: yellow;
+}

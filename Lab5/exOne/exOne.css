@@ -1,0 +1,30 @@
+body {
+  background-color: white;
+  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#header {
+  text-align: center;
+  background-color: red;
+  color: white;
+  padding: 0.5rem;
+}
+
+#leftbody {
+  height: 500px;
+  background-color: green;
+  color: white;
+  text-align: left;
+  padding-top: 2rem;
+  clear: both;
+}
+
+#bottom {
+  text-align: left;
+  height: 50px;
+  clear: both;
+  color: white;
+  background-color: blue;
+}

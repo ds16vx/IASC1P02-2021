@@ -1,0 +1,43 @@
+body {
+  color: black;
+  font-size: 10px;
+  margin: 0.5rem 0.5rem 0rem 0.5rem;
+}
+
+#mainContainer {
+  background-color: green;
+  padding: 1rem;
+  height: 100vh;
+}
+
+#firstContainer {
+  display: flex;
+}
+
+#secondContainer {
+  justify-content: center;
+  display: flex;
+}
+
+#first {
+  background-color: blue;
+  width: 250px;
+  height: 250px;
+  padding-top: 0.5rem;
+  margin: auto;
+}
+
+#second {
+  background-color: red;
+  width: 250px;
+  height: 250px;
+  padding-top: 0.5rem;
+  margin: auto;
+}
+
+#third {
+  background-color: yellow;
+  width: 250px;
+  height: 250px;
+  padding-top: 0.5rem;
+}
