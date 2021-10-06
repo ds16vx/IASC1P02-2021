@@ -1,43 +1,69 @@
 body {
   color: black;
   font-size: 10px;
-  margin: 0.5rem 0.5rem 0rem 0.5rem;
   font-size: large;
 }
 
-#mainContainer {
+#bodyWrap {
+  margin: 0.5rem 0.25rem 0rem 0.25rem;
   background-color: green;
+}
+
+#navContainer {
   padding: 1rem;
   height: 100vh;
-}
-
-#firstContainer {
-  display: flex;
-}
-
-#secondContainer {
-  justify-content: center;
-  display: flex;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 #first {
+  width: 500px;
+  height: 250px;
+  float: left;
+  display: flex;
+  justify-content: center;
+}
+
+#blueSquare {
   background-color: blue;
   width: 250px;
   height: 250px;
-  padding-top: 0.5rem;
-  margin: auto;
+  text-align: left;
+  float: left;
+  margin-right: 10rem;
 }
 
 #second {
+  width: 500px;
+  height: 250px;
+  float: left;
+  display: flex;
+  justify-content: center;
+}
+
+#redSquare {
   background-color: red;
   width: 250px;
   height: 250px;
-  padding-top: 0.5rem;
-  margin: auto;
+  text-align: left;
+  float: left;
+  margin-left: 10rem;
 }
 
 #third {
+  width: 1000px;
+  height: 250px;
+  margin: auto;
+  text-align: left;
+  float: left;
+  display: flex;
+  justify-content: center;
+}
+
+#yellowSquare {
   background-color: yellow;
   width: 250px;
   height: 250px;
+  text-align: left;
+  float: left;
 }

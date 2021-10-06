@@ -15,13 +15,13 @@ body {
 }
 
 #navContainer {
-  display: flex;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 #firstNav {
-  flex: 0.8;
   height: 50px;
-  width: 0px;
+  width: 200px;
   background-color: pink;
   text-align: left;
   padding-top: 2rem;
@@ -30,11 +30,11 @@ body {
 
 #secondNav {
   height: 50px;
+  width: 800px;
   background-color: orange;
-  flex: auto;
   text-align: left;
   padding-top: 2rem;
-  float: right;
+  float: left;
 }
 
 #content {
