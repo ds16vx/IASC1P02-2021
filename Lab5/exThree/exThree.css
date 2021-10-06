@@ -2,6 +2,7 @@ body {
   color: black;
   font-size: 10px;
   margin: 0.5rem 0.5rem 0rem 0.5rem;
+  font-size: large;
 }
 
 #mainContainer {
@@ -39,5 +40,4 @@ body {
   background-color: yellow;
   width: 250px;
   height: 250px;
-  padding-top: 0.5rem;
 }

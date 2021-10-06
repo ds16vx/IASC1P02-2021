@@ -1,8 +1,8 @@
 body {
   background-color: white;
   margin: 0;
-  padding-right: 3rem;
-  padding-left: 3rem;
+  padding-right: 10rem;
+  padding-left: 10rem;
   background-color: green;
   color: black;
   font-weight: bold;
@@ -25,6 +25,7 @@ body {
   background-color: pink;
   text-align: left;
   padding-top: 2rem;
+  float: left;
 }
 
 #secondNav {
@@ -33,6 +34,7 @@ body {
   flex: auto;
   text-align: left;
   padding-top: 2rem;
+  float: right;
 }
 
 #content {
