@@ -1,0 +1,74 @@
+<!--
+  David Saldana
+  A#4
+  December 5, 2021
+
+  References:
+
+  External Libraries/Code used in website:
+  VincentGarreau. “Vincentgarreau/Particles.js: A Lightweight Javascript Library for Creating Particles.” 
+  GitHub, https://github.com/VincentGarreau/particles.js/. 
+
+  Google Maps iFrame:
+  Google Maps, Google, https://www.google.com.mx/maps/place/Torre%C3%B3n,+Coahuila,+Mexico/@25.548687,-103.4369352,13z/data=!3m1!4b1!4m5!3m4!1s0x868fdba9bb45b3fb:0x8bcc7a9970aea01d!8m2!3d25.5428443!4d-103.4067861. 
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <title>Final Website</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!--This particles-js div code was obtained from
+    https://github.com/VincentGarreau/particles.js-->
+    <div id="particles-js"></div>
+    <script src="./particleLibrary/particles.js"></script>
+    <script src="./particleLibrary/app.js"></script>
+    <header>
+      <a class="headerTitle" href="./index.html">DAVID SALDANA</a>
+      <div class="headerNav">
+        <a class="headerPage" href="./index.html">ABOUT</a>
+        <a class="headerPage" href="./projectsPage.html">PROJECTS</a>
+        <a class="headerPage" href="./skillsPage.html">SKILLS</a>
+      </div>
+    </header>
+    <h1 class="titlePage">ABOUT ME</h1>
+    <div id="clock">You've spent 0 seconds in this page</div>
+    <div class="pageContent">
+      <div class="aboutSection">
+        Hi there! My name is David and I am a 4th year Computer Science student
+        at Brock University. I am an international student from Mexico and I've
+        been living in St Catharines for 4 years now. This course has helped me
+        refine my HTML, CSS and Javascript knoweldge. This website was quite fun
+        to design and create, I especially enjoyed implementing external
+        libraries such as the particles.js background you see in this site.
+      </div>
+      <div class="aboutImgSection">
+        <img
+          onclick="changeImg(this)"
+          class="aboutImg"
+          src="https://scontent-yyz1-1.xx.fbcdn.net/v/t1.6435-9/123029441_3887612644599633_5673202593886004702_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=ZaJTbEHG_aYAX9_wJkG&_nc_oc=AQknNOAspjlgPy7rFpMCljCevLmdJA6rVDBFldGUHf-Cpy_I7cuFHMvWdEIy5ISteV3mPtZMNyeglUnbnUi7sdLa&_nc_ht=scontent-yyz1-1.xx&oh=2bccb7aa83766f3e0cfee1a1038e9bba&oe=61B98729"
+          alt="myImage"
+        />
+        <button id="learnButton" onclick="learnMore()">Random Fact</button>
+      </div>
+    </div>
+    <div id="randomFact">What is this random space for?</div>
+    <div class="map">
+      <div class="mapName">Hometown Map</div>
+      <!--Google Maps iFrame:
+  Google Maps, Google, https://www.google.com.mx/maps/place/Torre%C3%B3n,+Coahuila,+Mexico/@25.548687,-103.4369352,13z/data=!3m1!4b1!4m5!3m4!1s0x868fdba9bb45b3fb:0x8bcc7a9970aea01d!8m2!3d25.5428443!4d-103.4067861. -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57595.046786081!2d-103.43693520433429!3d25.548686974742996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868fdba9bb45b3fb%3A0x8bcc7a9970aea01d!2sTorre%C3%B3n%2C%20Coahuila%2C%20Mexico!5e0!3m2!1sen!2sca!4v1637438017196!5m2!1sen!2sca"
+        width="850"
+        height="450"
+        style="border: 0; border-radius: 5%"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+    <footer>© David Saldana. All rights reserved.</footer>
+  </body>
+</html>

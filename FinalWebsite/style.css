@@ -1,0 +1,285 @@
+/*
+  David Saldana
+  A#4
+  December 5, 2021
+
+  References:
+
+  External Libraries/Code used in website:
+  VincentGarreau. “Vincentgarreau/Particles.js: A Lightweight Javascript Library for Creating Particles.” 
+  GitHub, https://github.com/VincentGarreau/particles.js/. 
+
+  Google Maps iFrame:
+  Google Maps, Google, https://www.google.com.mx/maps/place/Torre%C3%B3n,+Coahuila,+Mexico/@25.548687,-103.4369352,13z/data=!3m1!4b1!4m5!3m4!1s0x868fdba9bb45b3fb:0x8bcc7a9970aea01d!8m2!3d25.5428443!4d-103.4067861. 
+*/
+html {
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #fbeec1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  position: relative;
+  min-height: 100%;
+}
+
+header {
+  background-color: #8d8741be;
+  padding: 0.75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 30px;
+  width: -webkit-fill-available;
+}
+
+.headerTitle {
+  display: inline-flex;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+}
+
+.headerNav {
+  display: inline-flex;
+  color: white;
+  font-size: 1rem;
+  float: right;
+  line-height: 1.75;
+}
+
+.headerTitle:hover {
+  transform: scale(1.1);
+}
+
+.headerPage {
+  margin-right: 3rem;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.headerPage:hover {
+  transform: scale(1.4);
+}
+
+.titlePage {
+  text-align: center;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  font-size: 3rem;
+}
+
+.pageContent {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.1rem;
+  align-items: center;
+}
+
+.aboutSection {
+  display: inline-block;
+  width: 450px;
+  padding: 2rem;
+  background-color: #97903cd9;
+  opacity: 0;
+  color: white;
+  transition: all 3s ease-in-out;
+  font-size: 1.1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-right: 2rem;
+  border-radius: 5%;
+  font-size: 1.5rem;
+  border: 4px #66622dd9 solid;
+}
+
+.aboutImgSection {
+  display: inline-block;
+  transition: all 3s ease-in-out;
+  opacity: 0;
+}
+
+.aboutImg {
+  display: block;
+  width: 320px;
+  height: 375px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+#learnButton {
+  margin: 1rem;
+  background-color: #8d8741;
+  color: white;
+  border-radius: 20%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  animation: grow-shrink 3s infinite;
+}
+
+#randomFact {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  background-color: #fbeec1c4;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  width: 75%;
+  height: 5rem;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  font-style: italic;
+  opacity: 0;
+  transition: all 3s ease-in-out;
+}
+
+.projectsSection {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.project {
+  margin: 1.5rem;
+  border: 4px #66622dd9 solid;
+  background-color: #97903c;
+  opacity: 0;
+  transition: all 2s ease-in-out;
+  border-radius: 5%;
+  color: white;
+  text-decoration: none;
+  width: 25rem;
+  font-size: 1.1rem;
+}
+
+.project:hover {
+  transform: scale(1.1);
+}
+
+.project img {
+  width: 300px;
+  height: 280px;
+  padding: 1rem;
+  border-radius: 10%;
+}
+
+.projectTitle {
+  font-weight: bold;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+.projectDesc {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+}
+
+.skillsSection {
+  display: grid;
+  grid-template-columns: auto auto;
+  vertical-align: middle;
+  justify-content: center;
+  height: 78.4vh;
+}
+
+@keyframes grow-shrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.skill {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin: 4rem;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  background-color: #fbeec1d3;
+  animation: grow-shrink 3s infinite;
+  margin-top: 1rem;
+}
+
+.skill img {
+  width: 200px;
+  height: 200px;
+}
+
+.skillDesc {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.skillMiniDesc {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: #8d8741be;
+  font-size: 1rem;
+  padding: 0.75rem;
+  color: white;
+  bottom: 0;
+  width: -webkit-fill-available;
+  text-align: center;
+  padding: 0.75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#clock {
+  text-align: center;
+  background-color: #fbeec1d3;
+  margin: 2rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.map {
+  text-align: center;
+  height: 600px;
+  opacity: 0;
+  transition: all 3s ease-in-out;
+}
+
+.mapName {
+  text-align: center;
+  margin: 1rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.fadeIn {
+  opacity: 1 !important;
+}
+
+/*This particles-js CSS Code was obtained from https://github.com/VincentGarreau/particles.js/*/
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fbeec1;
+  z-index: -1;
+}
